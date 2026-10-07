@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53cb3c2e7a5e5dc4cb1371e37c395e3c, type: 3}
+  m_Name: Weapon 1
+  m_EditorClassIdentifier: Assembly-CSharp::CoalShoot.WeaponData
+  id: 'blot '
+  displayName: "\u041A\u043B\u044F\u043A\u0441\u043E\u0441\u0442\u0440\u0435\u043B"
+  description: )_)
+  price: 0
+  icon: {fileID: 0}
+  mode: 1
+  projectile: {fileID: 3209901927941800895, guid: 840c32ae21fef004bb2279576cb49684, type: 3}
+  fireInterval: 0.3
+  speed: 30
+  damage: 1.15
+  lifetime: 0.94
+  pellets: 3
+  spreadDegrees: 12.6
+  homingTurnDegPerSec: 450
+  lobUpSpeed: 14.4
+  gravity: 72
+  bounces: 1
+  recoil: 6.6
+  shake: 0.1
+  chargeTime: 0.67
+  chargedProjectile: {fileID: 0}
+  chargedDamage: 6
+  chargedSpeed: 42
+  exMode: 0
+  exProjectile: {fileID: 0}
+  exDamage: 2.2
+  exSpeed: 25
+  exCount: 1
+  exLifetime: 1.6

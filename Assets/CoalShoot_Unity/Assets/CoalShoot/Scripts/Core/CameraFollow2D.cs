@@ -47,7 +47,7 @@ namespace CoalShoot
                 float halfH = cam.orthographicSize;
                 float halfW = halfH * cam.aspect;
                 desired.x = Mathf.Clamp(desired.x, minBounds.x + halfW, Mathf.Max(minBounds.x + halfW, maxBounds.x - halfW));
-                desired.y = Mathf.Clamp(desired.y, minBounds.y + halfH, Mathf.Max(minBounds.y + halfH, maxBounds.y - halfH));
+                desired.y = Mathf.Clamp(desired.y, minBounds.y + halfH, Mathf.Max(minBounds.y + halfH, maxBounds.y - halfH)) /3;
             }
             transform.position = Vector3.SmoothDamp(transform.position, desired, ref velocity, smoothTime);
         }
