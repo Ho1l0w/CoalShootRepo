@@ -320,7 +320,11 @@ namespace CoalShoot
             }
             return n > 0;
         }
-
+        void OnCollisionStay2D(Collision2D c)
+        {
+            foreach (var p in c.contacts)
+                Debug.DrawRay(p.point, p.normal * 0.5f, Mathf.Abs(p.normal.x) > 0.7f ? Color.red : Color.green);
+        }
         bool WallAhead(int dir)
         {
             Bounds b = box.bounds;

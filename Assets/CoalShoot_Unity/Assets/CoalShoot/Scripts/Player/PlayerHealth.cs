@@ -19,7 +19,7 @@ namespace CoalShoot
         [SerializeField] GameObject downFx;
         [SerializeField] GameObject reviveFx;
 
-        public int Hp { get; private set; }
+        public int Hp;
         public int MaxHp { get; private set; }
         public bool IsDown { get; private set; }
         public bool IsInvulnerable => Time.time < invulnerableUntil || (smokeDash && pc.Motor.IsDashing);

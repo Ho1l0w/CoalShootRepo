@@ -22,12 +22,14 @@ namespace CoalShoot
         [SerializeField] Color dashGhostColor = new Color(0.14f, 0.27f, 0.88f, 0.6f);
         [SerializeField] float dashGhostInterval = 0.033f;
         [SerializeField] float dashGhostLife = 0.23f;
+        [SerializeField] float runThreshold = 0.1f;
 
         static readonly int SpeedId = Animator.StringToHash("Speed");
         static readonly int GroundedId = Animator.StringToHash("Grounded");
         static readonly int VelYId = Animator.StringToHash("VelY");
         static readonly int DashId = Animator.StringToHash("Dashing");
         static readonly int GlideId = Animator.StringToHash("Gliding");
+        static readonly int RunningId = Animator.StringToHash("running");
 
         PlayerController pc;
         PlayerMotor2D motor;
@@ -109,6 +111,11 @@ namespace CoalShoot
                 animator.SetFloat(VelYId, motor.Velocity.y);
                 animator.SetBool(DashId, motor.IsDashing);
                 animator.SetBool(GlideId, motor.IsGliding);
+
+                bool running = motor.IsGrounded
+                               && !motor.IsDashing
+                               && Mathf.Abs(motor.Velocity.x) > runThreshold;
+                animator.SetBool(RunningId, running);
             }
 
             if (motor.IsDashing && sprite != null)

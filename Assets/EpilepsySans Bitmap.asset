@@ -112,24 +112,24 @@ MonoBehaviour:
     m_FaceIndex: 0
     m_FamilyName: Epilepsy Sans
     m_StyleName: Medium
-    m_PointSize: 90
+    m_PointSize: 64
     m_Scale: 1
     m_UnitsPerEM: 1300
-    m_LineHeight: 90
-    m_AscentLine: 76.15385
-    m_CapLine: 56
-    m_MeanLine: 42
+    m_LineHeight: 64
+    m_AscentLine: 54.153847
+    m_CapLine: 40
+    m_MeanLine: 30
     m_Baseline: 0
-    m_DescentLine: -13.846153
-    m_SuperscriptOffset: 76.15385
+    m_DescentLine: -9.846154
+    m_SuperscriptOffset: 54.153847
     m_SuperscriptSize: 0.5
-    m_SubscriptOffset: -13.846153
+    m_SubscriptOffset: -9.846154
     m_SubscriptSize: 0.5
-    m_UnderlineOffset: -10.384615
-    m_UnderlineThickness: 6.9230766
-    m_StrikethroughOffset: 16.8
-    m_StrikethroughThickness: 6.9230766
-    m_TabWidth: 21
+    m_UnderlineOffset: -7.3846154
+    m_UnderlineThickness: 4.923077
+    m_StrikethroughOffset: 12
+    m_StrikethroughThickness: 4.923077
+    m_TabWidth: 15
   m_Material: {fileID: -420459626143628038}
   m_SourceFontFileGUID: d78edeb4a88b4e14fa8ac6393b2939ef
   m_CreationSettings:
@@ -137,7 +137,7 @@ MonoBehaviour:
     sourceFontFileGUID: d78edeb4a88b4e14fa8ac6393b2939ef
     faceIndex: 0
     pointSizeSamplingMode: 0
-    pointSize: 90
+    pointSize: 64
     padding: 9
     paddingMode: 2
     packingMode: 0
