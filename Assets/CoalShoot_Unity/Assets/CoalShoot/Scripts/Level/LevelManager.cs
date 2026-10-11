@@ -35,7 +35,7 @@ namespace CoalShoot
         public IReadOnlyList<PlayerController> Players => players;
 
         readonly List<PlayerController> players = new List<PlayerController>();
-        Vector2 respawnPoint;
+        public Vector2 respawnPoint;
 
         void Awake()
         {
@@ -110,7 +110,7 @@ namespace CoalShoot
             }
             Deaths++;
             for (int i = 0; i < players.Count; i++)
-                players[i].Health.Revive(players[i].Health.MaxHp, respawnPoint + Vector2.right * (i * 0.9f));
+                players[i].Health.Revive(players[i].Health.MaxHp, respawnPoint );
         }
 
         /// <summary>Призрак улетел: на обычном уровне игрок возвращается к напарнику с двумя сердцами.</summary>

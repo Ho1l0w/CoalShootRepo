@@ -20,6 +20,7 @@ namespace CoalShoot
             if (animator != null) animator.SetTrigger("Activate");
             FX.Spawn(activateFx, transform.position, 1.5f);
             CameraShake.Add(0.12f);
+            other.GetComponentInParent<PlayerMotor2D>().LastSafePosition = transform.position;
             if (LevelManager.Instance != null) LevelManager.Instance.SetCheckpoint(this);
         }
     }

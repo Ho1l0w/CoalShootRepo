@@ -32,7 +32,7 @@ namespace CoalShoot
         /// <summary>Собственная скорость персонажа без скорости платформы.</summary>
         public Vector2 Velocity => vel;
         /// <summary>Последняя точка, где персонаж надёжно стоял. Сюда возвращает падение в яму.</summary>
-        public Vector2 LastSafePosition { get; private set; }
+        public Vector2 LastSafePosition;
         public bool ControlLocked { get; set; }
         /// <summary>0 или 1. Выставляет PlayerController по прогрессу.</summary>
         public int AirJumpsMax { get; set; }
@@ -190,7 +190,6 @@ namespace CoalShoot
                 canDash = true;
                 jumpCut = false;
                 groundedTime += dt;
-                if (groundedTime > 0.2f && platformVel == Vector2.zero) LastSafePosition = rb.position;
             }
             else
             {
