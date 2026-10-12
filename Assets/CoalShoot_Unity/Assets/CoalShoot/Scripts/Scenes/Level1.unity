@@ -4568,7 +4568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a2d43120ed7c17418a6151c7c54e5ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoalShoot.LevelManager
-  level: {fileID: 11400000, guid: 7df021c5eda2ab847a138c643ea748d8, type: 2}
+  level: {fileID: 11400000, guid: 5ad5bd17b81592a498db2ee622ccb203, type: 2}
   squarePrefab: {fileID: 399935141280986607, guid: 711936615af07e946bbddaff2b018119, type: 3}
   blobPrefab: {fileID: 0}
   spawnPoint: {fileID: 0}
